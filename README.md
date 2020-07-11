@@ -12,7 +12,8 @@ This project contains an Azure Function written in C#. This project exposes API 
 - Knowledge about Azure Functions
 - Azure Subscription and Provisioning for the following services
   - Azure Function
-  - Azure Cognigtive Service - Get the Endpoint and Key 
+  - Azure Cognitive Service for Face API - Get Endpoint and Key
+  - Azure Cognigtive Service for Computer Vision (OCR) - Get the Endpoint and Key 
   - Azure Storage Account - Get the Connection String
   
 ## Quick start
@@ -23,8 +24,10 @@ This project contains an Azure Function written in C#. This project exposes API 
   "IsEncrypted": false,
   "Values": {
     "AzureWebJobsStorage": "AzureStorageAccountConnectionString",
-    "ComputerVisionEndpoint": "CognitiveServiceEndpoint",
-    "ComputerVisionKey": "CognitiveServiceKey",
+    "ComputerVisionEndpoint": "<CognitiveServiceEndpoint>",
+    "ComputerVisionKey": "<CognitiveServiceKey>",
+	"FaceEndpoint": "<FaceEndpoint>",
+    "FaceKey": "<FaceKey>",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet"
   }
 }
