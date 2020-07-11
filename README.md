@@ -10,9 +10,10 @@ This project contains an Azure Function written in C#. This project exposes API 
 - Visual Studio 2019
 - Knowledge about C#
 - Knowledge about Azure Functions
-- Azure Subscription
-  - Azure Cognigtive Service Endpoint and Key 
-  - Azure Storage Account
+- Azure Subscription and Provisioning for the following services
+  - Azure Function
+  - Azure Cognigtive Service - Get the Endpoint and Key 
+  - Azure Storage Account - Get the Connection String
   
 ## Quick start
 - To test it locally, after opening the project solution in Visual Studio 2019, you should a file named `local.settings.json` with the following content.
