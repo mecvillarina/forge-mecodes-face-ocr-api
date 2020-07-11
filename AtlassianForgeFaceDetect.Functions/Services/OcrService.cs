@@ -1,4 +1,5 @@
-﻿using AtlassianForgeFaceDetect.Functions.Models;
+﻿using AtlassianForgeFaceDetect.Functions.Common;
+using AtlassianForgeFaceDetect.Functions.Models;
 using AtlassianForgeFaceDetect.Functions.Services.Abstractions;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
@@ -28,10 +29,10 @@ namespace AtlassianForgeFaceDetect.Functions.Services
                 HttpClient client = new HttpClient();
 
                 client.DefaultRequestHeaders.Add(
-                    "Ocp-Apim-Subscription-Key", Environment.GetEnvironmentVariable("ComputerVisionKey"));
+                    "Ocp-Apim-Subscription-Key", _configuration[AppSettings.ComputerVisionKey]);
 
                 string requestParameters = "language=unk&detectOrientation=true";
-                string uri = $"{_configuration["ComputerVisionEndpoint"]}vision/v2.1/ocr" + "?" + requestParameters;
+                string uri = $"{_configuration[AppSettings.ComputerVisionEndpoint]}vision/v2.1/ocr" + "?" + requestParameters;
 
                 HttpResponseMessage response;
                 using (ByteArrayContent content = new ByteArrayContent(byteData))

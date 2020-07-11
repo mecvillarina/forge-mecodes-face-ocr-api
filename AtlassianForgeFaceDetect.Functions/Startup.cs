@@ -20,8 +20,8 @@ namespace AtlassianForgeFaceDetect.Functions
             {
                 IConfiguration configuration = sp.GetService<IConfiguration>();
 
-                string endpoint = configuration[AppSettings.ComputerVisionEndpoint];
-                string key = configuration[AppSettings.ComputerVisionKey];
+                string endpoint = configuration[AppSettings.FaceEndpoint];
+                string key = configuration[AppSettings.FaceKey];
 
                 return new FaceClient(new ApiKeyServiceClientCredentials(key)) { Endpoint = endpoint };
             });
