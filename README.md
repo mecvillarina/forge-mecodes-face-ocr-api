@@ -18,22 +18,14 @@ This project contains an Azure Function written in C#. This project exposes API 
 - To test it locally, after opening the project solution in Visual Studio 2019, you should a file named `local.settings.json`.
 
 `
-{
-  
+{ 
   "IsEncrypted": false,
-
   "Values": {
-  
     "AzureWebJobsStorage": "AzureStorageAccountConnectionString",
-    
     "ComputerVisionEndpoint": "CognitiveServiceEndpoint",
-    
     "ComputerVisionKey": "CognitiveServiceKey",
-    
     "FUNCTIONS_WORKER_RUNTIME": "dotnet"
-    
   }
-  
 }
 `
 
