@@ -1,4 +1,4 @@
-# API For Forge Face Detect and Forge Image-To-Text for Codegeist 2020 hackathon
+# API For Face Detect and Image-To-Text Atlassian Forge Apps for Codegeist 2020 hackathon
 
 This project contains an Azure Function written in C#. This project exposes API endpoints for Face Detect and Image-To-Text projects for Codegeist 2020 hackathon. If you're interested what's behind the Face Detect and Image-To-Text Entry Atlassian Forge Apps, you can visit these links below:
 
