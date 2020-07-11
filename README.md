@@ -19,7 +19,9 @@ This project contains an Azure Function written in C#. This project exposes API 
 
 `
 {
+
   "IsEncrypted": false,
+
   "Values": {
     "AzureWebJobsStorage": "AzureStorageAccountConnectionString",
     "ComputerVisionEndpoint": "CognitiveServiceEndpoint",
